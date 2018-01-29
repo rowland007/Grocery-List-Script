@@ -1,5 +1,9 @@
 # Grocery List Script
-This repository is used for the second assignment for the class IT-140-Q3788 Introduction to Scripting 18EW3 at Southern New Hampshire University. This first artifact will address basic data types and decision-making control structures (branched and while loops). Review the Final Project Script One Draft Guidelines and Rubric document for additional details to complete this assignment. The starter file for this assignment can be accessed in Codio. 
+This repository is used for the second assignment for the class IT-140-Q3788 Introduction to Scripting 18EW3 at Southern New Hampshire University. The task for this project is to create a very simple grocery list script. This script also emphasizes the importance of using lists, dictionaries and loop types within your script and how the use of those functions shapes your approach in creating a script.
+The task is broken down into three sections:
+* User Input
+* Loop through the grocery list
+* Provide output to the console
 
 ## Overview:
 For your final project, you will be creating four small scripts. Collectively, the four scripts will demonstrate your ability to engage in the fundamental scripting and problem-solving approaches that are represented by the course outcomes.
