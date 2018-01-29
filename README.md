@@ -5,6 +5,8 @@ The task is broken down into three sections:
 * Loop through the grocery list
 * Provide output to the console
 
+[![Build Status](https://travis-ci.org/rowland007/Grocery-List-Script.svg?branch=develop)](https://travis-ci.org/rowland007/Grocery-List-Script)
+
 ## Overview:
 For your final project, you will be creating four small scripts. Collectively, the four scripts will demonstrate your ability to engage in the fundamental scripting and problem-solving approaches that are represented by the course outcomes.
 Reminder: This the first draft. Even if your script is not functioning perfectly, submit your draft and get feedback so that you can improve on it for the final submission in Module Five.
