@@ -40,7 +40,7 @@ isStopped = False
 
 while not isStopped :           # Rubric inject: a while loop
 
-    # Accept input of the name of the grocery item purchased.
+    # Accept raw_input of the name of the grocery item purchased.
     itemName = raw_input('Item name:\n')
     # Accept input of the quantity of the grocery item purchased.
     quantity = raw_input('Quantity purchased:\n')
@@ -59,9 +59,9 @@ while not isStopped :           # Rubric inject: a while loop
     else:
         x += 1
 
-# Define variable to hold grand total called 'grand_total'
+# Define variable to hold grand total
 grandTotal = float(0.00)
-# Define a 'for' loop.
+
 
 for z in range(0, len(grocery_history) - 1):    # Rubric inject: index-based range loop
   
@@ -75,15 +75,13 @@ for z in range(0, len(grocery_history) - 1):    # Rubric inject: index-based ran
         ignoreThis = 10
     # Add the item_total to the grand_total
     grandTotal += float(itemTotal)
-    # Output the information for the grocery item to match this example:
-    # 2 apple	@	$1.49	ea	$2.98
     try:
         # Rubric inject: Accessing values in a list | accessing values using keys
         print(str(grocery_history[z]['number']) + ' ' + str(grocery_history[z]['name']) + ' @ $' + str('%.2f' % grocery_history[z]['price']) + ' ea $' + str('%.2f' % itemTotal))
     except KeyError:
         ignoreThis = 10
   
-    # Set the item_total equal to 0
+    # Reset item_total 
     itemTotal = 0
 
 # Print the grand total
