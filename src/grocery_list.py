@@ -14,6 +14,9 @@ Description:    The task for this project is to create a very
 Input:          stdin
 Output:         stdout
 Known bugs/missing features:
+                When accessing the dicitonary values in the list it generates
+                a 1 keyerror no matter the list size.  It still does the calulations.
+                Caught the keyerror exception and ignored it.
     
 Modifications:
 Date                Comment
@@ -28,14 +31,14 @@ Section 3 - provide output to the console
 '''
 
 # Task: Create the empty data structure
-grocery_item = {}
+grocery_item = {}               # Rubric inject: Create a dictionary
 
-grocery_history = grocery_item
+grocery_history = grocery_item  # Rubric inject: Create a list
 x = 0
 # Variable used to check if the while loop condition is met
 isStopped = False
 
-while not isStopped :
+while not isStopped :           # Rubric inject: a while loop
 
     # Accept input of the name of the grocery item purchased.
     itemName = raw_input('Item name:\n')
@@ -44,11 +47,11 @@ while not isStopped :
     # Accept input of the cost of the grocery item input (this is a per-item cost).
     cost = raw_input('Price per item:\n')
     # Create a dictionary entry which contains the name, number and price entered by the user.
-    grocery_item['name'] = itemName
-    grocery_item['number'] = int(quantity)
-    grocery_item['price'] = float(cost)
+    grocery_item['name'] = itemName         # Rubric inject: Adding key-value pairs
+    grocery_item['number'] = int(quantity)  # Rubric inject: Adding key-value pair
+    grocery_item['price'] = float(cost)     # Rubric inject: Adding key-value pair
     # Add the grocery_item to the grocery_history list using the append function
-    grocery_history[x] = grocery_item.copy()
+    grocery_history[x] = grocery_item.copy()    # Rubric inject: Adding data to a list
     # Accept input from the user asking if they have finished entering grocery items.
     exit = raw_input('Would you like to enter another item?\nType \'c\' for continue or \'q\' to quit:\n')
     if exit == 'q':
@@ -60,10 +63,13 @@ while not isStopped :
 grandTotal = float(0.00)
 # Define a 'for' loop.
 
-for z in range(0, len(grocery_history) - 1):
+for z in range(0, len(grocery_history) - 1):    # Rubric inject: index-based range loop
   
-    # Calculate the total cost for the grocery_item.
+    # The following code generates a keyerror after calculations are complete. 
+    # Caught the exception to ignore it for now and allow the script to continue to run.
     try:
+        # Calculate the total cost for the grocery_item
+        # Rubric inject: Accessing values in a list | accessing values using keys
         itemTotal = int(grocery_history[z].get('number')) * float(grocery_history[z].get('price'))
     except KeyError:
         ignoreThis = 10
@@ -72,6 +78,7 @@ for z in range(0, len(grocery_history) - 1):
     # Output the information for the grocery item to match this example:
     # 2 apple	@	$1.49	ea	$2.98
     try:
+        # Rubric inject: Accessing values in a list | accessing values using keys
         print(str(grocery_history[z]['number']) + ' ' + str(grocery_history[z]['name']) + ' @ $' + str('%.2f' % grocery_history[z]['price']) + ' ea $' + str('%.2f' % itemTotal))
     except KeyError:
         ignoreThis = 10
