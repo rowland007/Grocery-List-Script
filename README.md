@@ -9,7 +9,7 @@ The task is broken down into three sections:
 
 ## Overview:
 For your final project, you will be creating four small scripts. Collectively, the four scripts will demonstrate your ability to engage in the fundamental scripting and problem-solving approaches that are represented by the course outcomes.
-Reminder: This the first draft. Even if your script is not functioning perfectly, submit your draft and get feedback so that you can improve on it for the final submission in Module Five.
+~~Reminder: This the first draft. Even if your script is not functioning perfectly, submit your draft and get feedback so that you can improve on it for the final submission in Module Five.~~
 
 ## Prompt:
 The list object type is one of the most important and frequently used types in a Python program. A list is a container, an object that groups related objects together. A list is also a sequence: The contained objects maintain a left-to-right positional ordering. Elements of the list can be accessed via indexing operations that specify the position of the desired element in the list. Each element in a list can be a different type, such as string, integer, float, or even other list. 
@@ -42,7 +42,7 @@ The following critical element is not submitted with your draft, but you should 
 
 ## Rubric
 ### Guidelines for Submission: 
-This is a draft of part of the final project. Complete the steps in Codio. Feedback will be provided by your instructor to incorporate in the final submission and the reflection document.
+~~This is a draft of part of the final project.~~ Complete the steps in Codio. Feedback will be provided by your instructor to incorporate in the final submission and the reflection document.
 
 ### List
 Identifies examples of four uses of list functions in the script using comments in your code
